@@ -2856,7 +2856,40 @@ section,
 .contact .contact-form .btn:hover {
   background-color: color-mix(in srgb, var(--surface-color), transparent 70%);
 }
+.contact .contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
 
+.contact .btn-contact,
+.contact .btn-contact-outline {
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.contact .btn-contact {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.contact .btn-contact:hover {
+  transform: translateY(-3px);
+}
+
+.contact .btn-contact-outline {
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.contact .btn-contact-outline:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
